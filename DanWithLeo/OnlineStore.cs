@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DanWithLeo
 {
-    class OnlineStore
+    public class OnlineStore
     {
-        string Name;
-        double Price;
-        double Weight;
+        [Required]
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public double Weight { get; set; }
     }
 }

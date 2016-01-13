@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DanWithLeo
 {
-    class MusicRec
+  public  class MusicRec
     {
-        string Name;
-        double Leanth;
-        string Author;
+      [Required]
+      public int Id {get; set;}
+      public string Name {get; set;}
+      public double Leanth {get; set;}
+      public string Author { get; set; }
     }
 }
